@@ -11,7 +11,7 @@ class Var(object):
     MULTI_CLIENT = False
     API_ID = int(getenv("API_ID", "21407623"))
     API_HASH = str(getenv("API_HASH", "71526961879d5d662ec9307fe850da90"))
-    BOT_TOKEN = str(getenv("BOT_TOKEN","6136516898:AAFoiy-XM8w7RhhIvLLA6qWOjzIsIsl_h8c"))
+    BOT_TOKEN = str(getenv("BOT_TOKEN","6325109554:AAFX4GmFhrkO2VhKWzmlX0QexKYB-JRPqAQ"))
     name = str(getenv("name", "File-To-Link"))
     SLEEP_THRESHOLD = int(getenv("SLEEP_THRESHOLD", "60"))
     WORKERS = int(getenv("WORKERS", "4"))
@@ -41,5 +41,5 @@ class Var(object):
     BANNED_CHANNELS = list(
         {int(x) for x in str(getenv("BANNED_CHANNELS", "-1001362659779")).split()}
     )
-    BOT_USERNAME = str(getenv("BOT_USERNAME", "MPlaylink_Stream_Bot"))
+    BOT_USERNAME = str(getenv("BOT_USERNAME", "MABCD_abcdBot"))
     FILE_STORE_BOT_USERNAME = str(getenv("FILE_STORE_BOT_USERNAME", "MPlaylink_Destination_Bot"))
