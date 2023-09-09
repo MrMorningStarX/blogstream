@@ -42,4 +42,4 @@ class Var(object):
         {int(x) for x in str(getenv("BANNED_CHANNELS", "-1001362659779")).split()}
     )
     BOT_USERNAME = str(getenv("BOT_USERNAME", "Stream_Linksbot"))
-    FILE_STORE_BOT_USERNAME = str(getenv("FILE_STORE_BOT_USERNAME", "filestorage001_bot))
+    FILE_STORE_BOT_USERNAME = str(getenv("FILE_STORE_BOT_USERNAME", "filestorage001_bot"))
