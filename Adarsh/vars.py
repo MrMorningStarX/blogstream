@@ -36,10 +36,10 @@ class Var(object):
     )
     HAS_SSL = bool(getenv("HAS_SSL", False))
     URL = f"https://{FQDN}/" if HAS_SSL else f"http://{FQDN}/"
-    DATABASE_URL = str(getenv("DATABASE_URL", "mongodb+srv://MdMatin:x7bdggKJ9zb9JSK@cluster0.89bzvjn.mongodb.net/?retryWrites=true&w=majority"))
+    DATABASE_URL = str(getenv("DATABASE_URL", "mongodb+srv://morphiusxo:1234morph@cluster0.iivirfy.mongodb.net/?retryWrites=true&w=majority"))
     UPDATES_CHANNEL = str(getenv("UPDATES_CHANNEL", None))
     BANNED_CHANNELS = list(
         {int(x) for x in str(getenv("BANNED_CHANNELS", "-1001362659779")).split()}
     )
-    BOT_USERNAME = str(getenv("BOT_USERNAME", "MABCD_abcdBot"))
-    FILE_STORE_BOT_USERNAME = str(getenv("FILE_STORE_BOT_USERNAME", "MPlaylink_Destination_Bot"))
+    BOT_USERNAME = str(getenv("BOT_USERNAME", "Stream_Linksbot"))
+    FILE_STORE_BOT_USERNAME = str(getenv("FILE_STORE_BOT_USERNAME", "filestorage001_bot))
