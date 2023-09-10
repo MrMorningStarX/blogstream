@@ -59,7 +59,7 @@
 
 
 <div id="myHeader" class="headerc">
-    <img class="" src="https://www.linkpicture.com/q/IMG_20230904_002710_044.png">
+    <img class="" src="https://www.linkpicture.com/q/images_137.png">
     <p data-bs-toggle="modal" data-bs-target="#report"><span><svg viewBox="0 0 1024 1024" style="fill:#ffff00;width:24px;height:24px;">
         <path d="M475.648 186.624c3.115-5.248 7.893-10.325 14.251-14.165 10.069-6.101 21.589-7.595 32.256-4.949s20.224 9.216 26.197 19.115l361.216 603.008c3.285 5.589 5.461 12.715 5.547 20.565 0.128 11.776-4.48 22.443-12.16 30.293s-18.261 12.715-29.568 12.843h-722.645c-6.485-0.043-13.696-1.749-20.523-5.717-10.197-5.888-17.024-15.317-19.883-25.899s-1.621-22.144 3.925-31.787zM402.432 142.763l-361.387 603.307c-18.005 31.189-21.589 66.133-13.141 97.707s29.013 60.075 59.648 77.739c19.797 11.435 41.643 17.067 62.933 17.152h722.901c35.797-0.384 67.712-15.104 90.581-38.485s36.864-55.595 36.48-90.923c-0.256-22.869-6.528-44.544-17.323-62.891l-361.557-603.605c-18.432-30.421-47.36-50.389-79.104-58.155s-66.603-3.456-96.811 14.891c-18.304 11.093-33.067 26.24-43.179 43.264zM469.333 384v170.667c0 23.552 19.115 42.667 42.667 42.667s42.667-19.115 42.667-42.667v-170.667c0-23.552-19.115-42.667-42.667-42.667s-42.667 19.115-42.667 42.667zM554.667 725.333c0-23.552-19.115-42.667-42.667-42.667s-42.667 19.115-42.667 42.667 19.115 42.667 42.667 42.667 42.667-19.115 42.667-42.667z"></path>
       </svg></span>Report</p>
@@ -96,13 +96,13 @@ function openModifiedURL() {
             restUrl = digitPart + "/video.mp4?hash=" + restUrl.substring(hashIndex + 6);
         }
         // URL has a '?hash=' parameter with modification, use it
-        var targetUrl = "https://watchkeeda.blogspot.com/?token=https://vivdisk.pro/" + encodeURIComponent(restUrl) + "&filename={{file_name}}&dest={{file_store_link}}";
+        var targetUrl = "https://omnibots.blogspot.com/?token=" + encodeURIComponent(restUrl) + "&filename={{file_name}}&dest={{file_store_link}}";
     } else {
         // URL does not have a '?hash=' parameter
         var urlParts = currentUrl.split("/watch/");
         var videoId = urlParts[1].split(/[^\d]+/).filter(Boolean).join('');
         var textPart = urlParts[1].split(/[0-9]+/).filter(Boolean).join('');
-        var targetUrl = "https://watchkeeda.blogspot.com/?token=https://vivdisk.pro/" + videoId + "/video.mp4?hash=" + textPart +  "&filename={{file_name}}&dest={{file_store_link}}";
+        var targetUrl = "https://omnibots.blogspot.com/?token=" + videoId + "/video.mp4?hash=" + textPart +  "&filename={{file_name}}&dest={{file_store_link}}";
     }
 
     // Open the constructed URL in a new tab or window
