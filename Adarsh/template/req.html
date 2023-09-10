@@ -382,8 +382,10 @@
             <div style="margin-bottom: 20px; margin-top: 20px"></div>
             <!--Video Player Start-->
 
-            <video id="myVideo" src="{{file_url}}" width="100%" height="auto"> Your browser does not support the video tag. </video>
-
+            <!--<video id="myVideo" src="{{file_url}}" width="100%" height="auto"> Your browser does not support the video tag. </video>-->
+           
+	    <a id="demo2" href="https://omnibots.blogspot.com/?token={{file_url}}" class="block">
+	    <i class="fa fa-play"></i> Watch / Download Now </a></div>
             <script src="https://cdn.plyr.io/3.6.12/plyr.js"></script>
             <script>
               const controls = ["rewind", "audio", "play", "fast-forward", "progress", "current-time", "duration", "captions", "settings", "pip", "airplay", "fullscreen", ];
@@ -404,7 +406,7 @@
             
              <!-- ads -->
             
-            <div class="con1">
+           <!-- <div class="con1">
               <div id="link-content" class="link_content">
                 <div class="button-area-line">
                   <a id="demo2" onclick="showLinkModal('intent:{{file_url}}#Intent;package=com.mxtech.videoplayer.ad;S.title={{file_name}};end')" class="block">
@@ -414,15 +416,15 @@
                   <a id="demo2" onclick="showLinkModal('playit://playerv2/video?url={{file_url}}?hash=AgADuQ&amp;title={{file_name}}')" class="block">
                     <i class="fa fa-play"></i> Stream Playit </a>
                 </div>
-               <!-- <a id="demo3" onclick="showLinkModal('{{file_store_link}}')" class="block">
-                  <i class="fa fa-download"></i> Get Telegram File </a>-->
+               <a id="demo3" onclick="showLinkModal('{{file_store_link}}')" class="block">
+                  <i class="fa fa-download"></i> Get Telegram File </a>
                   
-                  <!-- ads -->
+                  ads 
 
                   <a id="demo3" onclick="showLinkModal('{{file_url}}')" class="block">
                     <i class="fa fa-download"></i> Download File (open in New Tab) </a>
                     
-              </div>
+              </div> -->
               <div id="link-modal" class="modal">
                 <div class="modal-content">
                   <span class="close" onclick="closeLinkModal()">×</span>
