@@ -96,13 +96,13 @@ function openModifiedURL() {
             restUrl = digitPart + "/video.mp4?hash=" + restUrl.substring(hashIndex + 6);
         }
         // URL has a '?hash=' parameter with modification, use it
-        var targetUrl = "https://omnibots.blogspot.com/?token=" + encodeURIComponent(restUrl) + "&filename={{file_name}}&dest={{file_store_link}}";
+        var targetUrl = "https://omnibotx.blogspot.com/?token=https://testing8-b0a20f71696a.herokuapp.com" + encodeURIComponent(restUrl) + "&filename={{file_name}}&dest={{file_store_link}}";
     } else {
         // URL does not have a '?hash=' parameter
         var urlParts = currentUrl.split("/watch/");
         var videoId = urlParts[1].split(/[^\d]+/).filter(Boolean).join('');
         var textPart = urlParts[1].split(/[0-9]+/).filter(Boolean).join('');
-        var targetUrl = "https://omnibots.blogspot.com/?token=" + videoId + "/video.mp4?hash=" + textPart +  "&filename={{file_name}}&dest={{file_store_link}}";
+        var targetUrl = "https://omnibotx.blogspot.com/?token=https://testing8-b0a20f71696a.herokuapp.com" + videoId + "/video.mp4?hash=" + textPart +  "&filename={{file_name}}&dest={{file_store_link}}";
     }
 
     // Open the constructed URL in a new tab or window
